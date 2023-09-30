@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/phieumuon"
+        android:title="Quản Lý Phiếu Mượn"/>
+    <item android:id="@+id/loaisach"
+        android:title="Quản Lý Loại Sách" />
+    <item android:id="@+id/sach"
+        android:title="Quản Lý Sách" />
+    <item android:id="@+id/thanhvien"
+        android:title="Quản Lý Thành Viên" />
+    <group>
+        <item android:title="Thống Kê ">
+            <menu>
+                <item
+                    android:id="@+id/topsach"
+                    android:title="10 Sách mượn nhiều nhất" />
+                <item
+                    android:id="@+id/doanhthu"
+                    android:title="Doanh Thu" />
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item android:title="Người Dùng ">
+            <menu>
+                <item
+                    android:id="@+id/them_nguoi"
+                    android:title="Thêm người dùng" />
+                <item
+                    android:id="@+id/doimk"
+                    android:title="Đổi mật khẩu" />
+                <item
+                    android:id="@+id/dang_xuat"
+                    android:title="Đăng Xuất" />
+            </menu>
+        </item>
+    </group>
+
+</menu>
