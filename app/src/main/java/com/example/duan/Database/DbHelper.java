@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DbHelper extends SQLiteOpenHelper {
     static String dbName = "PNLIB";
-    static int dbVersion = 2;
+    static int dbVersion = 6;
 
     public DbHelper(Context context){
         super(context,dbName,null,dbVersion);
@@ -47,6 +47,7 @@ public class DbHelper extends SQLiteOpenHelper {
                         "maLoai INTEGER REFERENCES LoaiSach(maLoai)) ";
         db.execSQL(createTableSach);
 
+
         //tạo bảng Phieu muon
         String createTablePhieuMuon =
                 "CREATE TABLE PhieuMuon (" +
@@ -55,7 +56,7 @@ public class DbHelper extends SQLiteOpenHelper {
                         "maTV INTEGER REFERENCES ThanhVien(maTV),"+
                         "maSach INTEGER REFERENCES Sach(maSach)," +
                         "tienThue INTEGER REFERENCES Sach(giaThue)," +
-                        "ngay DATE NOT NULL ," +
+                        "ngay TEXT NOT NULL ," +
                         "traSach INTEGER NOT NULL ) ";
         db.execSQL(createTablePhieuMuon);
     }

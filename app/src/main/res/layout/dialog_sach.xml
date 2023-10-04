@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/ed_maSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Ma sach"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:id="@+id/ed_tenSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Họ Tên"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:id="@+id/ed_giaThue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Gias Thue"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <Spinner
+        android:id="@+id/spLoaiSach"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_saveSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu" />
+        <Button
+            android:id="@+id/btn_HuySach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:layout_marginStart="30dp"/>
+    </LinearLayout>
+
+</LinearLayout>

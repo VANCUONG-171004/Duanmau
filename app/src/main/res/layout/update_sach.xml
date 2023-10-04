@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/ed_mas_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Ma Sach"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/ed_tens_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Tên Sách"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:id="@+id/ed_giathue_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Gía thuê"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <Spinner
+        android:id="@+id/sp_upsach"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_save_s_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu" />
+        <Button
+            android:id="@+id/btn_huy_s_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:layout_marginStart="30dp"/>
+    </LinearLayout>
+
+</LinearLayout>

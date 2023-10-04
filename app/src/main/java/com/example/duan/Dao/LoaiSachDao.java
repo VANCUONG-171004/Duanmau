@@ -22,15 +22,15 @@ public class LoaiSachDao {
 
     public long insert(LoaiSachDTO obj){
         ContentValues values = new ContentValues();
-        values.put("tenLoai",obj.tenLoai);
+        values.put("tenLoai",obj.getTenLoai());
         return db.insert("LoaiSach",null,values);
     }
 
     public int updatepass(LoaiSachDTO obj){
         ContentValues values = new ContentValues();
-        values.put("tenLoai",obj.tenLoai);
+        values.put("tenLoai",obj.getTenLoai());
 
-        return db.update("LoaiSach",values,"maLoai=?",new String[]{String.valueOf(obj.maLoai)});
+        return db.update("LoaiSach",values,"maLoai=?",new String[]{String.valueOf(obj.getMaLoai())});
     }
 
     public int delete(String id){
@@ -54,8 +54,8 @@ public class LoaiSachDao {
         if (c != null && c.getCount() > 0) {
             while (c.moveToNext()){
                 LoaiSachDTO  obj = new LoaiSachDTO();
-                obj.maLoai = Integer.parseInt(c.getString(0));
-                obj.tenLoai = c.getString(1);
+                obj.setMaLoai(Integer.parseInt(c.getString(0)));
+                obj.setTenLoai(c.getString(1));
 
                 list.add(obj);
             }

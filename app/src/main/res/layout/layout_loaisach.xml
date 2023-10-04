@@ -5,15 +5,17 @@
     android:layout_height="match_parent">
 
     <ListView
-        android:id="@+id/lv_thanhvien"
+        android:id="@+id/lv_loaisach"
         android:layout_width="match_parent"
         android:layout_height="600dp"
+        android:clickable="true"
+        android:focusable="true"
         android:divider="@color/black"
         android:dividerHeight="1dp"
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fab_ls"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"

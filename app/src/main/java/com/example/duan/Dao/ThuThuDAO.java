@@ -67,14 +67,22 @@ public class ThuThuDAO {
 
         return list;
     }
-    public boolean checkLogin(String maTT , String password){
-        db = dbHelper.getReadableDatabase();
+//    public boolean checkLogin(String maTT , String password){
+//        db = dbHelper.getReadableDatabase();
+//
+//        String sql = "SELECT * FROM ThuThu WHERE maTT=? AND matKhau=?";
+//        Cursor cursor = db.rawQuery(sql, new String[]{maTT,password});
+//        int count = cursor.getCount();
+//        db.close();
+//
+//        return (count >0);
+//    }
 
+    public int checkLogin(String id,String password){
         String sql = "SELECT * FROM ThuThu WHERE maTT=? AND matKhau=?";
-        Cursor cursor = db.rawQuery(sql, new String[]{maTT,password});
-        int count = cursor.getCount();
-        db.close();
-
-        return (count >0);
+        List<ThuThuDTO> list = getData(sql,id,password);
+        if (list.size() == 0)
+            return -1;
+        return 1;
     }
 }

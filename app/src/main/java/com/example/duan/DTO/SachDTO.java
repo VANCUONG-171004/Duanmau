@@ -7,6 +7,8 @@ public class SachDTO {
     public int giaThue;
     public int maLoai;
 
+
+
     public SachDTO() {
     }
 
@@ -16,4 +18,6 @@ public class SachDTO {
         this.giaThue = giaThue;
         this.maLoai = maLoai;
     }
+
+
 }
